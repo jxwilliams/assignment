@@ -1,22 +1,20 @@
 <!-- 
   Project: Rock Paper Scissors Game
   Description: A simple web-based Rock Paper Scissors game where the player
-  chooses Rock, Paper, or Scissors and the computer randomly 
-  selects a choice after a short "thinking" animation. 
-  The result is displayed and the score is tracked.
+               chooses Rock, Paper, or Scissors and the computer randomly 
+               selects a choice after a short "thinking" animation. 
+               The result is displayed and the score is tracked.
   Author: Jowuan Williams
   Date: 10/1/25
-  
 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rock Paper Scissors</title>
-  <!-- Link to the CSS file for styling -->
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link to the CSS file for styling (root path) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -29,13 +27,13 @@
       <div class="choices">
         <!-- Each button has a data attribute so JS knows which throw it represents -->
         <button class="choice" data-throw="rock">
-          <img src="images/rock.png" alt="Rock">
+          <img src="rock.png" alt="Rock">
         </button>
         <button class="choice" data-throw="paper">
-          <img src="images/paper.png" alt="Paper">
+          <img src="paper.png" alt="Paper">
         </button>
         <button class="choice" data-throw="scissors">
-          <img src="images/scissors.png" alt="Scissors">
+          <img src="scissors.png" alt="Scissors">
         </button>
       </div>
     </section>
@@ -44,7 +42,7 @@
     <section id="computer">
       <h2>Computer Throw</h2>
       <!-- Default image is a question mark until computer chooses -->
-      <img id="computer-img" src="images/question.svg" alt="Computer choice">
+      <img id="computer-img" src="question.svg" alt="Computer choice">
       <p id="thinking">Waiting for your choice…</p>
     </section>
 
@@ -60,6 +58,12 @@
       <button id="reset">Reset</button>
     </section>
   </div>
+
+  <!-- Link to the JS file for interactivity (root path) -->
+  <script src="script.js"></script>
+</body>
+</html>
+
 
   <!-- Link to the JS file for interact-->
   <script src="js/script.js"></script>
